@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = axios.create({
-    baseURL: 'http://localhost:8000'
+    baseURL: ' https://www.pre-onboarding-selection-task.shop'
 })
 
 class Auth {
@@ -19,4 +19,9 @@ class Auth {
     }
 }
 
+class Todo {
+    CreateTodo = async (props) => {
+
+    }
+}
 export const authApi = new Auth()
