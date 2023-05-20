@@ -20,3 +20,10 @@ export const TokenCheck = (props) => {
         props.navigate('/todo')
     }
 }
+export const TokenCheckTodo = (props) => {
+    const val = window.localStorage.getItem('access_token')
+    if (val) {
+        //토큰이 존재하지 않으면 /signin로 리다이렉트
+        props.navigate('/todo')
+    }
+}
