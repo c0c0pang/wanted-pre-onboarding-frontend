@@ -12,17 +12,16 @@ export const Validation = (props) => {
     }
 }
 
+export const TOKEN = window.localStorage.getItem('access_token')
 
 export const TokenCheck = (props) => {
-    const val = window.localStorage.getItem('access_token')
-    if (val) {
+    if (TOKEN) {
         //토큰이 존재하면 /todo로 리다이렉트
         props.navigate('/todo')
     }
 }
 export const TokenCheckTodo = (props) => {
-    const val = window.localStorage.getItem('access_token')
-    if (val) {
+    if (TOKEN) {
         //토큰이 존재하지 않으면 /signin로 리다이렉트
         props.navigate('/todo')
     }
