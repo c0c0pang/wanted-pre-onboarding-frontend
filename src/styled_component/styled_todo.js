@@ -11,11 +11,10 @@ export const TodoCreateButton = styled.button`
 
 `
 export const ListDiv = styled.div`
-
+    padding: 10px;
 `
 
 export const List = styled.li`
-    
 `
 
 export const LabelDiv = styled.div`
@@ -31,14 +30,21 @@ export const LabelSpan = styled.span`
 
 `
 export const ModifyDiv = styled.div`
+    height: 20px;
+    width: 10vw;
+`
+export const ModifyInput = styled.input`
 
 `
-export const ModifyInput = styled.div`
+export const ModifySubmitButton = styled.button`
 
 `
-export const ModifySubmitButton = styled.div`
+export const ModifyCancelButton = styled.button`
 
 `
-export const ModifyCancelButton = styled.div`
+export const ModifyButton = styled.button`
+
+`
+export const DeleteButton = styled.button`
 
 `
