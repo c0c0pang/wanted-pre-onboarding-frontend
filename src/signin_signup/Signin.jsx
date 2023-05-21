@@ -36,7 +36,7 @@ function Signin() {
             <SelectBoxDiv onSubmit={onSubmit}>
                 <Input type='email' name='email' value={email} placeholder='이메일' onChange={onChange} data-testid="email-input"></Input>
                 <Input type='password' name='password' value={password} onChange={onChange} placeholder='비밀번호' minLength={8} data-testid="password-input"></Input>
-                {check ? (<Button type='submit' data-testid="signin-button" onClick={onClick}>로그인</Button>) : (<Button disabled>로그인</Button>)}
+                <Button type='submit' data-testid="signin-button" onClick={onClick} disabled={!check}>로그인</Button>
             </SelectBoxDiv>
         </MainDiv>
     )
