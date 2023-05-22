@@ -31,13 +31,18 @@ class Todo {
                 todo: todo
             },
             config
-        ).then((res) => {
-            console.log(res.status)
-        })
+        ).then((res) => res.status)
     }
     GetTodo = async () => {
         return await baseURL.get('/todos', config)
             .then((res) => res.data)
+    }
+    UpDateTodo = async (props) => {
+        return await baseURL.put(`/todos/${props.id}`, {
+            todo: props.todo,
+            isCompleted: props.isCompleted
+        }, config)
+            .then((res) => res.status)
     }
     DeleteTodo = async (id) => {
         return await baseURL.delete(`/todos/${id}`, config)
