@@ -14,4 +14,8 @@
 - [x] 회원가입
   - [x] 유효성 검사
   - [x] 토큰 검사
-- [ ] todo
+- [x] todo
+  - [x] todo생성
+  - [x] todo삭제
+  - [x] todo업데이트
+  - [x] todo가져오기
